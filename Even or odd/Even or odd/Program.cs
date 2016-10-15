@@ -10,6 +10,16 @@ namespace Even_or_odd
     {
         static void Main(string[] args)
         {
+            //Write a C# Sharp program to check whether a given number is even or odd.
+            Console.Write("Please enter the number to be evaluated: ");
+            int num = int.Parse(Console.ReadLine());
+
+            if (num % 2 == 0)
+            { Console.WriteLine("{0} is even", num); }
+            else Console.WriteLine("{0} is odd", num);
+            Console.ReadLine();
         }
+            
     }
+
 }
