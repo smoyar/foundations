@@ -33,14 +33,14 @@ namespace Homework3
 
             //Convert seconds into days
 
-           days = intsec / (secmin * minhour * hourday);
+            days = intsec / (secmin * minhour * hourday);
 
             //Display result on screen for user
 
             Console.WriteLine("The amount of days is: {0:F2}", days);
 
             Console.ReadLine(); //To hold up the console
-                        
+
         }
     }
 }
