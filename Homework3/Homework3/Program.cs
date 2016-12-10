@@ -9,38 +9,24 @@ namespace Homework3
     class Program
     {
         static void Main(string[] args)
-        {//Program that takes seconds and converts it into days
+        {
+            //Looping: Write a program that calculates factorial of an integer n given by the user.  Please enter a small integer.
+            //Asignment #3
 
-            //Variables used
+            double fact = 1;
+            Console.Write("Please enter a number to calculate its factorial: ");
+            string strnum = Console.ReadLine();
+            int n = int.Parse(strnum);
 
-            string strsec;
-            double intsec;
-            double days;
-            double secmin = 60;
-            double minhour = 60;
-            double hourday = 24;
+            for (int i = 1; i <= n; i++)
+            {
 
-            //Ask user for input of seconds
+                fact = i * fact;
 
-            Console.Write("Please introduce number of seconds to be converted into days: ");
+            }
 
-            //Take value of user as a string
-            strsec = Console.ReadLine();
-
-            //Convert strsec into a numerical value
-
-            intsec = double.Parse(strsec);
-
-            //Convert seconds into days
-
-            days = intsec / (secmin * minhour * hourday);
-
-            //Display result on screen for user
-
-            Console.WriteLine("The amount of days is: {0:F2}", days);
-
-            Console.ReadLine(); //To hold up the console
-
+            Console.WriteLine("The factorial of {0} is:  {1}", n, fact);
+            Console.ReadLine();
         }
     }
 }
